@@ -1,0 +1,138 @@
+<section class="mx-auto flex w-full max-w-md flex-col gap-6 p-6">
+  <header>
+    <h1 class="text-2xl font-semibold text-gray-900">
+      Mask Playground
+    </h1>
+
+    <p class="mt-1 text-sm text-gray-500">
+      Teste as máscaras disponíveis na aplicação.
+    </p>
+  </header>
+
+  <div class="flex flex-col gap-4">
+    <label class="flex flex-col gap-1.5">
+      <span class="text-sm font-medium text-gray-700">
+        Telefone
+      </span>
+
+      <input
+        class="rounded-lg border-2 border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500"
+        type="tel"
+        appMask
+        mask="phone"
+        placeholder="(00) 0000-0000"
+        autocomplete="tel"
+      />
+    </label>
+
+    <label class="flex flex-col gap-1.5">
+      <span class="text-sm font-medium text-gray-700">
+        Celular
+      </span>
+
+      <input
+        class="rounded-lg border-2 border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500"
+        type="tel"
+        appMask
+        mask="mobile"
+        placeholder="(00) 00000-0000"
+        autocomplete="tel"
+      />
+    </label>
+
+    <label class="flex flex-col gap-1.5">
+      <span class="text-sm font-medium text-gray-700">
+        CPF
+      </span>
+
+      <input
+        class="rounded-lg border-2 border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500"
+        type="text"
+        appMask
+        mask="cpf"
+        placeholder="000.000.000-00"
+        inputmode="numeric"
+        autocomplete="off"
+      />
+    </label>
+
+    <label class="flex flex-col gap-1.5">
+      <span class="text-sm font-medium text-gray-700">
+        CNPJ
+      </span>
+
+      <input
+        class="rounded-lg uppercase border-2 border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500"
+        type="text"
+        appMask
+        mask="cnpj"
+        placeholder="00.000.000/0000-00"
+        inputmode="numeric"
+        autocomplete="off"
+      />
+    </label>
+
+    <label class="flex flex-col gap-1.5">
+      <span class="text-sm font-medium text-gray-700">
+        Data
+      </span>
+
+      <input
+        class="rounded-lg border-2 border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500"
+        type="text"
+        appMask
+        mask="date"
+        placeholder="DD/MM/AAAA"
+        inputmode="numeric"
+        autocomplete="off"
+      />
+    </label>
+
+    <label class="flex flex-col gap-1.5">
+      <span class="text-sm font-medium text-gray-700">
+        Data e hora
+      </span>
+
+      <input
+        class="rounded-lg border-2 border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500"
+        type="text"
+        appMask
+        mask="datetime"
+        placeholder="DD/MM/AAAA HH:MM"
+        inputmode="numeric"
+        autocomplete="off"
+      />
+    </label>
+
+    <label class="flex flex-col gap-1.5">
+      <span class="text-sm font-medium text-gray-700">
+        Cartão
+      </span>
+
+      <input
+        class="rounded-lg border-2 border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500"
+        type="text"
+        appMask
+        mask="card"
+        placeholder="0000 0000 0000 0000"
+        inputmode="numeric"
+        autocomplete="cc-number"
+      />
+    </label>
+
+    <label class="flex flex-col gap-1.5">
+      <span class="text-sm font-medium text-gray-700">
+        Placa
+      </span>
+
+      <input
+        class="rounded-lg border-2 border-gray-300 px-4 py-3 uppercase outline-none transition focus:border-blue-500"
+        type="text"
+        appMask
+        mask="licensePlate"
+        placeholder="ABC-1234"
+        autocomplete="off"
+      />
+    </label>
+  </div>
+</section>
